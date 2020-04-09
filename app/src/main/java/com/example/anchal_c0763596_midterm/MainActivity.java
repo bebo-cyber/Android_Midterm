@@ -62,13 +62,15 @@ public class MainActivity extends Activity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                logIn();
             }
         });
     }
 
-    //public void logIn() {
-    //Intent intent = new Intent(this, Welcome.class);
-    //startActivity(intent);
+    public void logIn() {
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
+
+    }
 
 }
